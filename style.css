@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    background: #2e2a32;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+}
+
+canvas {
+    background: #e6e6e6;
+}
