@@ -1,15 +1,40 @@
 body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
     background: #2e2a32;
+    color: white;
     display: grid;
     grid-template-rows: auto 1fr;
 }
 
-select {
-    padding: 10px;
-    font-size: 16px;
+/* Header styling */
+header {
+    padding: 15px 20px;
+    background: #1f1c23;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
+/* Controls area */
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Select styling */
+select {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+/* Canvas styling */
 canvas {
     background: #e6e6e6;
+    width: 100%;
 }

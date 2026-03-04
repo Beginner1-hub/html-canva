@@ -2,21 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Canvas Lab Tasks</title>
+    <title>CTEC3705 – Canvas Lab Exercises</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
     <script type="module" src="app.js"></script>
 </head>
 <body>
 
-    <select id="taskSelector">
-        <option value="line">Draw Line</option>
-        <option value="closed">Closed Path</option>
-        <option value="rectangles">Rectangles</option>
-        <option value="arcs">Arcs</option>
-        <option value="flower">Flower Pattern</option>
-        <option value="grid">Face Grid</option>
-    </select>
+    <header>
+        <h1>CTEC3705 – HTML Canvas Lab</h1>
+
+        <div class="controls">
+            <label for="taskSelector">Choose Exercise:</label>
+
+            <select id="taskSelector">
+                <optgroup label="Basic Path Drawing">
+                    <option value="line">Draw Line</option>
+                    <option value="closed">Closed Path (Polygon)</option>
+                </optgroup>
+
+                <optgroup label="Convenience Methods">
+                    <option value="rectangles">Rectangles</option>
+                    <option value="arcs">Arcs</option>
+                </optgroup>
+
+                <optgroup label="Structured Composition">
+                    <option value="flower">Flower Pattern</option>
+                    <option value="grid">Face Grid</option>
+                </optgroup>
+            </select>
+        </div>
+    </header>
 
     <canvas id="canvas"></canvas>
 
