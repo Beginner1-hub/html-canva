@@ -1,0 +1,27 @@
+#promise-example {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    output {
+        padding: 0.5rem;
+        align-content: center;
+        text-align: left;
+        background: hsl(40, 100%, 20%);
+        color: white;   
+        &.pending {
+            animation: pulse 100ms infinite alternate;
+            &::before { content: "pending..."; }
+        }
+        &.resolved {
+            background: hsl(100, 100%, 30%);
+            &::before { content: "resolved: "; }
+        }
+        &.rejected {
+            background: hsl(0, 100%, 30%);
+            &::before { content: "rejected: "; }
+        }
+    }
+}
+@keyframes pulse {
+    100% { background: hsl(40, 100%, 30%); }
+}

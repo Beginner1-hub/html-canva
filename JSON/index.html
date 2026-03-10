@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Async Demo</title>
+<style>
+    output { display: block; margin-top: 10px; padding: 5px; border: 1px solid #ccc; white-space: pre-line; }
+    .pending { color: gray; }
+    .resolved { color: green; }
+    .rejected { color: red; }
+</style>
+</head>
+<body>
+
+<h2>Callback Calculator</h2>
+<button id="start-callback">Run Hello → Sum → Goodbye</button>
+<output id="callback-output"></output>
+
+<h2>Promise Example</h2>
+<button id="promise-btn">Run Promise</button>
+<output id="promise-output"></output>
+
+<h2>Async/Await Demo</h2>
+<div id="demo-async"></div>
+
+<script src="app.js" type="module"></script>
+</body>
+</html>
